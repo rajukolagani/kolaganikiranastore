@@ -1,49 +1,70 @@
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f2f2f2;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
 }
 header {
-  background: #2d3436;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-main {
-  padding: 20px;
+header h1 {
+    margin: 0;
+    font-size: 28px;
 }
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
 }
-.product-card {
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+a.whatsapp-link {
+    color: #00ffb3;
+    text-decoration: none;
 }
-.product-card img {
-  width: 100px;
-  height: 100px;
+.slider {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
 }
-.product-card h3 {
-  margin: 10px 0 0 0;
+.slider img {
+    width: 100%;
+    display: none;
+    height: auto;
 }
-.product-image {
-  max-width: 300px;
-  display: block;
-  margin: 20px auto;
+.slider img.active {
+    display: block;
 }
-.whatsapp-button {
-  display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+h2.section-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
 }
