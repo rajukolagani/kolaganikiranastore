@@ -1,110 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kolagani Lachanna Kiranam</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: Arial; margin: 0; background: #f5f5f5; }
+    header { background: #003366; color: white; padding: 1em; text-align: center; }
+    .carousel { display: flex; overflow-x: auto; white-space: nowrap; background: #fff; padding: 10px; }
+    .carousel img { height: 100px; margin-right: 10px; border-radius: 8px; }
+    h2 { padding: 1em; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; padding: 1em; }
+    .item { background: white; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .item img { max-width: 100px; height: 80px; margin-bottom: 5px; }
+    .item a { display: block; color: #000; text-decoration: none; font-weight: bold; margin-top: 5px; }
+    footer { background: #003366; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+  </style>
 </head>
 <body>
   <header>
     <h1>Kolagani Lachanna Kiranam</h1>
-    <p>Welcome! Order directly on <a href="https://wa.me/9398180827" target="_blank">WhatsApp</a></p>
+    <p>Welcome! Order directly on <a href="https://wa.me/919398180827" style="color: yellow;">WhatsApp</a></p>
   </header>
-  <div class="slider">
-    <img src="images/banner1.jpg" alt="Welcome Banner" class="slide active">
-    <img src="images/banner2.jpg" alt="Offers" class="slide">
-    <img src="images/banner3.jpg" alt="Fresh Products" class="slide">
+
+  <div class="carousel">
+    <img src="assets/rice.jpg" alt="Rice" />
+    <img src="assets/sugar.jpg" alt="Sugar" />
+    <img src="assets/oil.jpg" alt="Oil" />
+    <img src="assets/soap.jpg" alt="Soap" />
+    <img src="assets/detergent.jpg" alt="Detergent" />
   </div>
-  <h2 class="section-title">Shop by Category</h2>
+
+  <h2>Shop by Category</h2>
   <div class="grid">
-
-    <a href="products/rice.html" class="item">
-      <img src="images/rice.jpg" alt="Rice">
-      <span>Rice</span>
-    </a>
-
-    <a href="products/toordal.html" class="item">
-      <img src="images/toordal.jpg" alt="Toor Dal">
-      <span>Toor Dal</span>
-    </a>
-
-    <a href="products/moongdal.html" class="item">
-      <img src="images/moongdal.jpg" alt="Moong Dal">
-      <span>Moong Dal</span>
-    </a>
-
-    <a href="products/sugar.html" class="item">
-      <img src="images/sugar.jpg" alt="Sugar">
-      <span>Sugar</span>
-    </a>
-
-    <a href="products/atta.html" class="item">
-      <img src="images/atta.jpg" alt="Atta">
-      <span>Atta</span>
-    </a>
-
-    <a href="products/maida.html" class="item">
-      <img src="images/maida.jpg" alt="Maida">
-      <span>Maida</span>
-    </a>
-
-    <a href="products/acid.html" class="item">
-      <img src="images/acid.jpg" alt="Acid">
-      <span>Acid</span>
-    </a>
-
-    <a href="products/salt.html" class="item">
-      <img src="images/salt.jpg" alt="Salt">
-      <span>Salt</span>
-    </a>
-
-    <a href="products/soap.html" class="item">
-      <img src="images/soap.jpg" alt="Soap">
-      <span>Soap</span>
-    </a>
-
-    <a href="products/shampoo.html" class="item">
-      <img src="images/shampoo.jpg" alt="Shampoo">
-      <span>Shampoo</span>
-    </a>
-
-    <a href="products/oil.html" class="item">
-      <img src="images/oil.jpg" alt="Oil">
-      <span>Oil</span>
-    </a>
-
-    <a href="products/detergent.html" class="item">
-      <img src="images/detergent.jpg" alt="Detergent">
-      <span>Detergent</span>
-    </a>
-
-    <a href="products/toothpaste.html" class="item">
-      <img src="images/toothpaste.jpg" alt="Toothpaste">
-      <span>Toothpaste</span>
-    </a>
-
-    <a href="products/spices.html" class="item">
-      <img src="images/spices.jpg" alt="Spices">
-      <span>Spices</span>
-    </a>
-
-    <a href="products/cleaningitems.html" class="item">
-      <img src="images/cleaning.jpg" alt="Cleaning Items">
-      <span>Cleaning Items</span>
-    </a>
+    <div class="item"><img src="assets/rice.jpg" alt="Rice" /><a href="https://wa.me/919398180827?text=Is%20Rice%20available?">Rice</a></div>
+    <div class="item"><img src="assets/toor_dal.jpg" alt="Toor Dal" /><a href="https://wa.me/919398180827?text=Is%20Toor%20Dal%20available?">Toor Dal</a></div>
+    <div class="item"><img src="assets/sugar.jpg" alt="Sugar" /><a href="https://wa.me/919398180827?text=Is%20Sugar%20available?">Sugar</a></div>
+    <div class="item"><img src="assets/salt.jpg" alt="Salt" /><a href="https://wa.me/919398180827?text=Is%20Salt%20available?">Salt</a></div>
+    <div class="item"><img src="assets/oil.jpg" alt="Oil" /><a href="https://wa.me/919398180827?text=Is%20Oil%20available?">Oil</a></div>
+    <div class="item"><img src="assets/soap.jpg" alt="Soap" /><a href="https://wa.me/919398180827?text=Is%20Soap%20available?">Soap</a></div>
+    <div class="item"><img src="assets/detergent.jpg" alt="Detergent" /><a href="https://wa.me/919398180827?text=Is%20Detergent%20available?">Detergent</a></div>
   </div>
+
   <footer>
-    <p>&copy; 2025 Kolagani Lachanna Kiranam. All rights reserved.</p>
+    &copy; 2025 Kolagani Lachanna Kiranam. All rights reserved.
   </footer>
-  <script>
-    let slides = document.querySelectorAll('.slide');
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 3000);
-  </script>
 </body>
 </html>
